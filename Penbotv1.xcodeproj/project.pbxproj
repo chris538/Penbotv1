@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8309084427D595F500F5872A /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8309084327D595F500F5872A /* GameController.framework */; };
+		8309084827D5A22A00F5872A /* VirtualControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309084727D5A22A00F5872A /* VirtualControllerViewController.swift */; };
 		833E57D027B17600002B2710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57CF27B17600002B2710 /* AppDelegate.swift */; };
 		833E57D227B17600002B2710 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57D127B17600002B2710 /* SceneDelegate.swift */; };
 		833E57D427B17600002B2710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57D327B17600002B2710 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 		833E57E727B17602002B2710 /* Penbotv1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57E627B17602002B2710 /* Penbotv1Tests.swift */; };
 		833E57F127B17602002B2710 /* Penbotv1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57F027B17602002B2710 /* Penbotv1UITests.swift */; };
 		833E57F327B17602002B2710 /* Penbotv1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57F227B17602002B2710 /* Penbotv1UITestsLaunchTests.swift */; };
+		83B3120127E297EB00EEDA50 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B3120027E297EB00EEDA50 /* CoreBluetooth.framework */; };
+		83B3120327E2982D00EEDA50 /* BTScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3120227E2982D00EEDA50 /* BTScanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8309084327D595F500F5872A /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		8309084727D5A22A00F5872A /* VirtualControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualControllerViewController.swift; sourceTree = "<group>"; };
 		833E57CC27B17600002B2710 /* Penbotv1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Penbotv1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833E57CF27B17600002B2710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		833E57D127B17600002B2710 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		833E57EC27B17602002B2710 /* Penbotv1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Penbotv1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		833E57F027B17602002B2710 /* Penbotv1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penbotv1UITests.swift; sourceTree = "<group>"; };
 		833E57F227B17602002B2710 /* Penbotv1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penbotv1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83B3120027E297EB00EEDA50 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		83B3120227E2982D00EEDA50 /* BTScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTScanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B3120127E297EB00EEDA50 /* CoreBluetooth.framework in Frameworks */,
+				8309084427D595F500F5872A /* GameController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8309084227D595F500F5872A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83B3120027E297EB00EEDA50 /* CoreBluetooth.framework */,
+				8309084327D595F500F5872A /* GameController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		833E57C327B17600002B2710 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,7 @@
 				833E57E527B17602002B2710 /* Penbotv1Tests */,
 				833E57EF27B17602002B2710 /* Penbotv1UITests */,
 				833E57CD27B17600002B2710 /* Products */,
+				8309084227D595F500F5872A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +123,11 @@
 				833E57D127B17600002B2710 /* SceneDelegate.swift */,
 				833E57D327B17600002B2710 /* ViewController.swift */,
 				833E57D527B17600002B2710 /* Main.storyboard */,
+				8309084727D5A22A00F5872A /* VirtualControllerViewController.swift */,
 				833E57D827B17601002B2710 /* Assets.xcassets */,
 				833E57DA27B17601002B2710 /* LaunchScreen.storyboard */,
 				833E57DD27B17601002B2710 /* Info.plist */,
+				83B3120227E2982D00EEDA50 /* BTScanViewController.swift */,
 			);
 			path = Penbotv1;
 			sourceTree = "<group>";
@@ -260,6 +282,8 @@
 			files = (
 				833E57D427B17600002B2710 /* ViewController.swift in Sources */,
 				833E57D027B17600002B2710 /* AppDelegate.swift in Sources */,
+				8309084827D5A22A00F5872A /* VirtualControllerViewController.swift in Sources */,
+				83B3120327E2982D00EEDA50 /* BTScanViewController.swift in Sources */,
 				833E57D227B17600002B2710 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,9 +466,11 @@
 				DEVELOPMENT_TEAM = 5HJD23NRA9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Penbotv1/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,9 +496,11 @@
 				DEVELOPMENT_TEAM = 5HJD23NRA9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Penbotv1/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
