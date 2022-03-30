@@ -19,6 +19,7 @@
 		833E57E727B17602002B2710 /* Penbotv1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57E627B17602002B2710 /* Penbotv1Tests.swift */; };
 		833E57F127B17602002B2710 /* Penbotv1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57F027B17602002B2710 /* Penbotv1UITests.swift */; };
 		833E57F327B17602002B2710 /* Penbotv1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57F227B17602002B2710 /* Penbotv1UITestsLaunchTests.swift */; };
+		836BA30927F4A8E100C97D0B /* BasicButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836BA30827F4A8E100C97D0B /* BasicButtonViewController.swift */; };
 		83B3120127E297EB00EEDA50 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B3120027E297EB00EEDA50 /* CoreBluetooth.framework */; };
 		83B3120327E2982D00EEDA50 /* BTScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3120227E2982D00EEDA50 /* BTScanViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		833E57EC27B17602002B2710 /* Penbotv1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Penbotv1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		833E57F027B17602002B2710 /* Penbotv1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penbotv1UITests.swift; sourceTree = "<group>"; };
 		833E57F227B17602002B2710 /* Penbotv1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Penbotv1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		836BA30827F4A8E100C97D0B /* BasicButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButtonViewController.swift; sourceTree = "<group>"; };
 		83B3120027E297EB00EEDA50 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		83B3120227E2982D00EEDA50 /* BTScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTScanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				833E57DD27B17601002B2710 /* Info.plist */,
 				83B3120227E2982D00EEDA50 /* BTScanViewController.swift */,
 				831884CD27E3D10A00424C6A /* BluettothScanViewController.swift */,
+				836BA30827F4A8E100C97D0B /* BasicButtonViewController.swift */,
 			);
 			path = Penbotv1;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				833E57D427B17600002B2710 /* ViewController.swift in Sources */,
+				836BA30927F4A8E100C97D0B /* BasicButtonViewController.swift in Sources */,
 				833E57D027B17600002B2710 /* AppDelegate.swift in Sources */,
 				8309084827D5A22A00F5872A /* VirtualControllerViewController.swift in Sources */,
 				831884CE27E3D10A00424C6A /* BluettothScanViewController.swift in Sources */,

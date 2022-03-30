@@ -203,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="2347" y="-218"/>
         </scene>
-        <!--View Controller-->
+        <!--Basic Button View Controller-->
         <scene sceneID="uxO-2b-Gui">
             <objects>
-                <viewController id="NhZ-Ug-6GK" sceneMemberID="viewController">
+                <viewController id="NhZ-Ug-6GK" customClass="BasicButtonViewController" customModule="Penbotv1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dDc-NG-H7t">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,6 +221,9 @@
                                     </backgroundConfiguration>
                                     <attributedString key="attributedTitle"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="squareCommandButton:" destination="NhZ-Ug-6GK" eventType="touchUpInside" id="Fns-8I-Fw6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Square" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpR-Vx-0gd">
                                 <rect key="frame" x="154" y="232" width="184" height="67"/>
@@ -244,6 +247,9 @@
                                     </backgroundConfiguration>
                                     <attributedString key="attributedTitle"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="triangleCommandButton:" destination="NhZ-Ug-6GK" eventType="touchUpInside" id="9hl-MU-bZW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Triangle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8U-j1-2Sr">
                                 <rect key="frame" x="143" y="393" width="207" height="67"/>
@@ -267,6 +273,9 @@
                                     </backgroundConfiguration>
                                     <attributedString key="attributedTitle"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="circleCommandButton:" destination="NhZ-Ug-6GK" eventType="touchUpInside" id="ynn-k8-Ygh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Circle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSp-Is-dOo">
                                 <rect key="frame" x="171" y="554" width="150" height="67"/>
@@ -280,11 +289,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Please press a command to begin Drawing" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BXB-dd-dw9">
+                                <rect key="frame" x="50" y="76" width="328" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qfw-rw-upr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qfw-rw-upr" firstAttribute="trailing" secondItem="BXB-dd-dw9" secondAttribute="trailing" constant="50" id="FzF-Vf-nKd"/>
+                            <constraint firstItem="BXB-dd-dw9" firstAttribute="top" secondItem="qfw-rw-upr" secondAttribute="top" constant="76" id="JcJ-ZL-gTd"/>
+                            <constraint firstItem="BXB-dd-dw9" firstAttribute="leading" secondItem="qfw-rw-upr" secondAttribute="leading" constant="50" id="xZI-ZM-rkE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="du4-qd-eHh"/>
+                    <connections>
+                        <outlet property="CurrentCommandTextField" destination="BXB-dd-dw9" id="kbz-NA-k2D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ua9-Pl-9WI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
