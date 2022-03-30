@@ -10,6 +10,16 @@ import GameController
 
 class VirtualControllerViewController: UIViewController {
     
+    //let description = String("")
+    
+    @IBOutlet weak var currentCommandTextField: UITextField!
+    
+    @IBAction func testButton(_ sender: Any) {
+        currentCommandTextField.text = "Test Button Onscreen"
+        print("Test in console")
+        
+    }
+    
     //Code below was used from a Stack Overthrow solution from user Ahmed El-Bermawy
     private var _virtualController: Any?
     @available(iOS 15.0, *)
@@ -19,11 +29,14 @@ class VirtualControllerViewController: UIViewController {
     }
 
     //Own code
-    @IBAction func Controller(_ sender: UIButton) {
-    }
+    //@IBAction func Controller(_ sender: UIButton) {
+    //}
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //own code block
+        //currentCommandTextField.text = description
         
         //let virtualConfiguration = GCVirtualController.Configuration()
         

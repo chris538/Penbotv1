@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Is the app allowed to communicate with other bluetooth devices</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Is bluetooth use allowed for the app?</string>
 	<key>GCSupportedGameControllers</key>
 	<array>
 		<dict>

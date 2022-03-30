@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8309084427D595F500F5872A /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8309084327D595F500F5872A /* GameController.framework */; };
 		8309084827D5A22A00F5872A /* VirtualControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309084727D5A22A00F5872A /* VirtualControllerViewController.swift */; };
+		831884CE27E3D10A00424C6A /* BluettothScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831884CD27E3D10A00424C6A /* BluettothScanViewController.swift */; };
 		833E57D027B17600002B2710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57CF27B17600002B2710 /* AppDelegate.swift */; };
 		833E57D227B17600002B2710 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57D127B17600002B2710 /* SceneDelegate.swift */; };
 		833E57D427B17600002B2710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E57D327B17600002B2710 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		8309084327D595F500F5872A /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		8309084727D5A22A00F5872A /* VirtualControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualControllerViewController.swift; sourceTree = "<group>"; };
+		831884CD27E3D10A00424C6A /* BluettothScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluettothScanViewController.swift; sourceTree = "<group>"; };
 		833E57CC27B17600002B2710 /* Penbotv1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Penbotv1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833E57CF27B17600002B2710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		833E57D127B17600002B2710 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				833E57DA27B17601002B2710 /* LaunchScreen.storyboard */,
 				833E57DD27B17601002B2710 /* Info.plist */,
 				83B3120227E2982D00EEDA50 /* BTScanViewController.swift */,
+				831884CD27E3D10A00424C6A /* BluettothScanViewController.swift */,
 			);
 			path = Penbotv1;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				833E57D427B17600002B2710 /* ViewController.swift in Sources */,
 				833E57D027B17600002B2710 /* AppDelegate.swift in Sources */,
 				8309084827D5A22A00F5872A /* VirtualControllerViewController.swift in Sources */,
+				831884CE27E3D10A00424C6A /* BluettothScanViewController.swift in Sources */,
 				83B3120327E2982D00EEDA50 /* BTScanViewController.swift in Sources */,
 				833E57D227B17600002B2710 /* SceneDelegate.swift in Sources */,
 			);
@@ -467,6 +471,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Penbotv1/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -497,6 +502,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Penbotv1/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
