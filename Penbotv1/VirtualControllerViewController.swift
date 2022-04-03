@@ -14,10 +14,14 @@ class VirtualControllerViewController: UIViewController {
     
     @IBOutlet weak var currentCommandTextField: UITextField!
     
-    @IBAction func testButton(_ sender: Any) {
-        currentCommandTextField.text = "Test Button Onscreen"
-        print("Test in console")
-        
+    @IBAction func fowardButton(_ sender: Any) {
+        currentCommandTextField.text = "Penbot is moving forward..."
+        print("Forward")
+    }
+    
+    @IBAction func backwardButton(_ sender: Any) {
+        currentCommandTextField.text = "Penbot is moving backward..."
+        print("Reverse")
     }
     
     //Code below was used from a Stack Overthrow solution from user Ahmed El-Bermawy
@@ -27,6 +31,8 @@ class VirtualControllerViewController: UIViewController {
       get { return self._virtualController as? GCVirtualController }
       set { self._virtualController = newValue }
     }
+    
+    
 
     //Own code
     //@IBAction func Controller(_ sender: UIButton) {
@@ -69,7 +75,7 @@ class VirtualControllerViewController: UIViewController {
                     virtualConfiguration.elements = [GCInputLeftThumbstick,
                                                      GCInputRightThumbstick,
                                                      GCInputButtonA,
-                                                     GCInputButtonB,]
+                                                     GCInputButtonB]
                     virtualController = GCVirtualController(configuration: virtualConfiguration)
                 
                     // Connect to the virtual controller if no physical controllers are available.
@@ -124,14 +130,16 @@ class VirtualControllerViewController: UIViewController {
         }
         
         buttonA?.valueChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
-            // Put here the codes to run when button A clicked
-            print("Button A Pressed")
+            // Put here the codes to run when button A clicked, own code
+            self.currentCommandTextField.text = "Penbot is moving forward..."
+            print("Go Forward")
         }
 
         buttonB?.valueChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
-            // Put here the codes to run when button B clicked
+            // Put here the codes to run when button B clicked, own code
             print("Button B Pressed")
         }
+        
     }
 
     func unregisterGameController()

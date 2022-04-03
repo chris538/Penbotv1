@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Ni-zk-I9j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S1A-tY-QyE">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -391,30 +390,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Penbot is drawing a complex portrait" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYX-g7-2vG">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Penbot is ready for input from the user" borderStyle="roundedRect" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FYX-g7-2vG">
                                 <rect key="frame" x="50" y="88" width="328" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncu-78-avz">
-                                <rect key="frame" x="171" y="417" width="77" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="systemBlueColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qB-ho-q3o">
+                                <rect key="frame" x="343" y="783" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="4kr-Vl-pTj"/>
+                                    <constraint firstAttribute="width" secondItem="1qB-ho-q3o" secondAttribute="height" multiplier="1:1" id="rkr-PK-HQl"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="">
-                                    <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule"/>
                                 <connections>
-                                    <action selector="testButton:" destination="S1A-tY-QyE" eventType="touchUpInside" id="myZ-CD-xQu"/>
+                                    <action selector="backwardButton:" destination="S1A-tY-QyE" eventType="touchUpInside" id="Kge-Yj-xsG"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tf4-Rw-gD8">
+                                <rect key="frame" x="343" y="718" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tf4-Rw-gD8" secondAttribute="height" multiplier="1:1" id="E68-7R-DJH"/>
+                                    <constraint firstAttribute="width" constant="60" id="hww-tf-pKk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule"/>
+                                <connections>
+                                    <action selector="fowardButton:" destination="S1A-tY-QyE" eventType="touchUpInside" id="s4Y-cy-JDw"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Thd-fZ-twT">
+                                <rect key="frame" x="355" y="726.33333333333337" width="36" height="44"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46.329999999999998" id="6xK-3o-1mw"/>
+                                    <constraint firstAttribute="width" constant="36" id="PLY-uB-dLk"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xJh-QF-haL">
+                                <rect key="frame" x="355" y="791.33333333333337" width="36" height="44"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="4R0-Iw-lG7"/>
+                                    <constraint firstAttribute="height" constant="46.329999999999998" id="vjj-K5-Tpo"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0c-SV-SHi">
+                                <rect key="frame" x="203" y="552" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3ji-ga-14j"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3ji-ga-14j" firstAttribute="trailing" secondItem="FYX-g7-2vG" secondAttribute="trailing" constant="50" id="1xE-mc-2Rq"/>
-                            <constraint firstItem="FYX-g7-2vG" firstAttribute="leading" secondItem="3ji-ga-14j" secondAttribute="leading" constant="50" id="3b3-pm-9N8"/>
-                            <constraint firstItem="FYX-g7-2vG" firstAttribute="top" secondItem="3ji-ga-14j" secondAttribute="top" id="onC-hw-4vr"/>
+                            <constraint firstItem="3ji-ga-14j" firstAttribute="trailing" secondItem="tf4-Rw-gD8" secondAttribute="trailing" constant="25" id="26w-BD-JA3"/>
+                            <constraint firstItem="3ji-ga-14j" firstAttribute="trailing" secondItem="1qB-ho-q3o" secondAttribute="trailing" constant="25" id="7Bn-Ra-Or5"/>
+                            <constraint firstItem="1qB-ho-q3o" firstAttribute="top" secondItem="tf4-Rw-gD8" secondAttribute="bottom" constant="5" id="BqH-ri-HIx"/>
+                            <constraint firstItem="3ji-ga-14j" firstAttribute="trailing" secondItem="xJh-QF-haL" secondAttribute="trailing" constant="37" id="CWS-VB-VEg"/>
+                            <constraint firstItem="3ji-ga-14j" firstAttribute="bottom" secondItem="xJh-QF-haL" secondAttribute="bottom" constant="6.6699999999999999" id="DhM-gn-Ag6"/>
+                            <constraint firstItem="FYX-g7-2vG" firstAttribute="leading" secondItem="3ji-ga-14j" secondAttribute="leading" constant="50" id="DrR-uh-xXm"/>
+                            <constraint firstItem="1qB-ho-q3o" firstAttribute="bottom" secondItem="3ji-ga-14j" secondAttribute="bottom" id="Wj4-U6-EJb"/>
+                            <constraint firstItem="1qB-ho-q3o" firstAttribute="top" secondItem="Thd-fZ-twT" secondAttribute="bottom" constant="11.67" id="XsC-YX-SE5"/>
+                            <constraint firstItem="3ji-ga-14j" firstAttribute="trailing" secondItem="FYX-g7-2vG" secondAttribute="trailing" constant="50" id="iAq-RE-Tvs"/>
+                            <constraint firstItem="3ji-ga-14j" firstAttribute="trailing" secondItem="Thd-fZ-twT" secondAttribute="trailing" constant="37" id="lhx-ZY-0Z8"/>
+                            <constraint firstItem="FYX-g7-2vG" firstAttribute="top" secondItem="3ji-ga-14j" secondAttribute="top" id="qhE-8U-ihb"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -467,6 +508,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.down" catalog="system" width="120" height="128"/>
+        <image name="arrow.up" catalog="system" width="120" height="128"/>
         <image name="bolt.fill" catalog="system" width="101" height="128"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="folder.fill.badge.gearshape" catalog="system" width="128" height="94"/>
