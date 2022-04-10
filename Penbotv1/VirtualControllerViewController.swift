@@ -10,19 +10,31 @@ import GameController
 
 class VirtualControllerViewController: UIViewController {
     
-    //let description = String("")
     
     @IBOutlet weak var currentCommandTextField: UITextField!
-    
     @IBAction func fowardButton(_ sender: Any) {
         currentCommandTextField.text = "Penbot is moving forward..."
-        print("Forward")
+    }
+    @IBAction func reverseButton(_ sender: Any) {
+        currentCommandTextField.text = "Penbot is moving backward..."
+    }
+    @IBAction func leftButton(_ sender: Any) {
+        currentCommandTextField.text = "Penbot is moving left..."
+    }
+    @IBAction func rightButton(_ sender: Any) {
+        currentCommandTextField.text = "Penbot is moving right..."
+    }
+    @IBAction func triangleButton(_ sender: Any) {
+        currentCommandTextField.text = "Penbot is drawing a triangle..."
+    }
+    @IBAction func circleButton(_ sender: Any) {
+        currentCommandTextField.text = "Penbot is drawing a circle..."
+    }
+    @IBAction func squareButton(_ sender: Any) {
+        currentCommandTextField.text = "Penbot is drawing a square..."
     }
     
-    @IBAction func backwardButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is moving backward..."
-        print("Reverse")
-    }
+    
     
     //Code below was used from a Stack Overthrow solution from user Ahmed El-Bermawy
     private var _virtualController: Any?
@@ -33,28 +45,20 @@ class VirtualControllerViewController: UIViewController {
     }
     
     
-
-    //Own code
-    //@IBAction func Controller(_ sender: UIButton) {
-    //}
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //own code block
         //currentCommandTextField.text = description
         
-        //let virtualConfiguration = GCVirtualController.Configuration()
+        let virtualController = GCVirtualController.Configuration()
         
-        //virtualConfiguration.elements = [GCInputLeftThumbstick,
-          //                               GCInputButtonA,
-            //                             GCInputButtonB,
-              //                           GCInputButtonX,
-        //                                 GCInputButtonY]
+        virtualController.elements = [GCInputLeftThumbstick,
+                                         GCInputButtonA,
+                                         GCInputButtonB,
+                                         GCInputButtonX,
+                                         GCInputButtonY]
         
-        //let virtualController = GCVirtualController(configuration: virtualConfiguration)
-        //virtualController.connect()
-        setUpGameController()
         
         // Do any additional setup after loading the view.
     }
@@ -72,10 +76,7 @@ class VirtualControllerViewController: UIViewController {
                 if #available(iOS 15.0, *)
                 {
                     let virtualConfiguration = GCVirtualController.Configuration()
-                    virtualConfiguration.elements = [GCInputLeftThumbstick,
-                                                     GCInputRightThumbstick,
-                                                     GCInputButtonA,
-                                                     GCInputButtonB]
+                    virtualConfiguration.elements = [GCInputLeftThumbstick]
                     virtualController = GCVirtualController(configuration: virtualConfiguration)
                 
                     // Connect to the virtual controller if no physical controllers are available.
@@ -120,25 +121,24 @@ class VirtualControllerViewController: UIViewController {
 
     func registerGameController(_ gameController: GCController) {
 
-        var buttonA: GCControllerButtonInput?
-        var buttonB: GCControllerButtonInput?
+        //var buttonA: GCControllerButtonInput?
+        //var buttonB: GCControllerButtonInput?
         
         if let gamepad = gameController.extendedGamepad
         {
-            buttonA = gamepad.buttonA
-            buttonB = gamepad.buttonB
+            //buttonA = gamepad.buttonA
+            //buttonB = gamepad.buttonB
         }
         
-        buttonA?.valueChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
+        //buttonA?.valueChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
             // Put here the codes to run when button A clicked, own code
-            self.currentCommandTextField.text = "Penbot is moving forward..."
-            print("Go Forward")
-        }
+            //print("Go Forward")
+        //}
 
-        buttonB?.valueChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
+        //buttonB?.valueChangedHandler = {(_ button: GCControllerButtonInput, _ value: Float, _ pressed: Bool) -> Void in
             // Put here the codes to run when button B clicked, own code
-            print("Button B Pressed")
-        }
+            //print("Button B Pressed")
+        //}
         
     }
 
