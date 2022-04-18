@@ -5,56 +5,46 @@
 //  Created by Chris Le on 3/16/22.
 //
 
-import Foundation
+import UIKit
 import CoreBluetooth
 
-import UIKit
-
-class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate{
+class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
+    
+    var centralManager: CBCentralManager!
+    var myPeripheral: CBPeripheral!
+    
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        print("idk")
-        return
+        if central.state == CBManagerState.poweredOn {
+            print("BLE powered on")
+            // Turned on
+            central.scanForPeripherals(withServices: nil, options: nil)
+        }
+        else {
+            print("Something wrong with BLE")
+            // Not on, but can have different issues
+        }
     }
     
-
+    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        if let pname = peripheral.name {
+            if pname == "BT05" {
+                print("connected")
+                self.centralManager.stopScan()
+                self.myPeripheral = peripheral
+                self.myPeripheral.delegate = self
+                self.centralManager.connect(peripheral, options: nil)
+                print("connected")
+            }
+        }
+    }
     
-    
-    //var centralManager: CBCentralManager!
+    func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+        self.myPeripheral.discoverServices(nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var centralManager: CBCentralManager!
-        //Initialize central manager
-        centralManager = CBCentralManager(delegate: self, queue: .main)
-        
-        //Discover peripherals only once
-        let options: [String: Any] = [CBCentralManagerScanOptionAllowDuplicatesKey: NSNumber(value: false)]
-        
-        //Discover BT peripherals
-        centralManager?.scanForPeripherals(withServices: nil, options: options)
-        
-        func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-            print("Discovered \(peripheral.name ?? "")")
-        }
-        
-        //Start manager
-        //class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDelegate{
-        //    func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        //        <#code#>
-        //    }
-            
-            
-        }
-        
-        //startButton.titleLabel?.baselineAdjustment = UIBaselineAdjustment.alignCenters
-        //startButton.titleLabel!.adjustsFontSizeToFitWidth = true
         // Do any additional setup after loading the view.
-    
-    //func centralManagerDidUpdateState(_ central: CBCentralManager) {
-    //    <#code#>
-    //}
-    
-    
-    
+        centralManager = CBCentralManager(delegate: self, queue: nil)
+    }
 }

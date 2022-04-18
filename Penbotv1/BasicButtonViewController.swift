@@ -12,15 +12,15 @@ class BasicButtonViewController: UIViewController {
     
     @IBOutlet weak var currentCommandTextField: UITextField!
     @IBAction func squareCommandButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is drawing a square"
+        currentCommandTextField.text = "Penbot is drawing a square..."
         print("Test square in console")
     }
     @IBAction func triangleCommandButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is drawing a triangle"
+        currentCommandTextField.text = "Penbot is drawing a triangle..."
         print("Test triangle in console")
     }
     @IBAction func circleCommandButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is drawing a circle"
+        currentCommandTextField.text = "Penbot is drawing a circle..."
         print("Test circle in console")
     }
     

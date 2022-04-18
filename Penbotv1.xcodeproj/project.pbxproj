@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20E7E66C37FECD073DE114FC /* Pods_Penbotv1_Penbotv1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA173011321209C4306270F /* Pods_Penbotv1_Penbotv1UITests.framework */; };
+		2BBFAC0F1EF243D59A417DCF /* Pods_Penbotv1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80EC876575F697DE6CC6A554 /* Pods_Penbotv1Tests.framework */; };
 		8309084427D595F500F5872A /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8309084327D595F500F5872A /* GameController.framework */; };
 		8309084827D5A22A00F5872A /* VirtualControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8309084727D5A22A00F5872A /* VirtualControllerViewController.swift */; };
 		831884CE27E3D10A00424C6A /* BluettothScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831884CD27E3D10A00424C6A /* BluettothScanViewController.swift */; };
@@ -22,6 +24,7 @@
 		836BA30927F4A8E100C97D0B /* BasicButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836BA30827F4A8E100C97D0B /* BasicButtonViewController.swift */; };
 		83B3120127E297EB00EEDA50 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B3120027E297EB00EEDA50 /* CoreBluetooth.framework */; };
 		83B3120327E2982D00EEDA50 /* BTScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3120227E2982D00EEDA50 /* BTScanViewController.swift */; };
+		D9EB902C0874B5795B75CC52 /* Pods_Penbotv1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A6F913251C12032C3532FD /* Pods_Penbotv1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13A6F913251C12032C3532FD /* Pods_Penbotv1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Penbotv1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA173011321209C4306270F /* Pods_Penbotv1_Penbotv1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Penbotv1_Penbotv1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		345BE147FE2B9696E5CC035D /* Pods-Penbotv1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penbotv1Tests.debug.xcconfig"; path = "Target Support Files/Pods-Penbotv1Tests/Pods-Penbotv1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D9B120DCDFC8A7C73A5E5B5 /* Pods-Penbotv1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penbotv1Tests.release.xcconfig"; path = "Target Support Files/Pods-Penbotv1Tests/Pods-Penbotv1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4745E629C5929E6A63375056 /* Pods-Penbotv1-Penbotv1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penbotv1-Penbotv1UITests.release.xcconfig"; path = "Target Support Files/Pods-Penbotv1-Penbotv1UITests/Pods-Penbotv1-Penbotv1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		477A0A3ACA557459AA987584 /* Pods-Penbotv1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penbotv1.release.xcconfig"; path = "Target Support Files/Pods-Penbotv1/Pods-Penbotv1.release.xcconfig"; sourceTree = "<group>"; };
+		6C495FA5AB060976EF852A98 /* Pods-Penbotv1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penbotv1.debug.xcconfig"; path = "Target Support Files/Pods-Penbotv1/Pods-Penbotv1.debug.xcconfig"; sourceTree = "<group>"; };
+		80EC876575F697DE6CC6A554 /* Pods_Penbotv1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Penbotv1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8309084327D595F500F5872A /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
 		8309084727D5A22A00F5872A /* VirtualControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualControllerViewController.swift; sourceTree = "<group>"; };
 		831884CD27E3D10A00424C6A /* BluettothScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluettothScanViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +72,7 @@
 		836BA30827F4A8E100C97D0B /* BasicButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicButtonViewController.swift; sourceTree = "<group>"; };
 		83B3120027E297EB00EEDA50 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		83B3120227E2982D00EEDA50 /* BTScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTScanViewController.swift; sourceTree = "<group>"; };
+		85AFF69086B997575EBD3B8C /* Pods-Penbotv1-Penbotv1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Penbotv1-Penbotv1UITests.debug.xcconfig"; path = "Target Support Files/Pods-Penbotv1-Penbotv1UITests/Pods-Penbotv1-Penbotv1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 			files = (
 				83B3120127E297EB00EEDA50 /* CoreBluetooth.framework in Frameworks */,
 				8309084427D595F500F5872A /* GameController.framework in Frameworks */,
+				D9EB902C0874B5795B75CC52 /* Pods_Penbotv1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BBFAC0F1EF243D59A417DCF /* Pods_Penbotv1Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E7E66C37FECD073DE114FC /* Pods_Penbotv1_Penbotv1UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +110,9 @@
 			children = (
 				83B3120027E297EB00EEDA50 /* CoreBluetooth.framework */,
 				8309084327D595F500F5872A /* GameController.framework */,
+				13A6F913251C12032C3532FD /* Pods_Penbotv1.framework */,
+				2FA173011321209C4306270F /* Pods_Penbotv1_Penbotv1UITests.framework */,
+				80EC876575F697DE6CC6A554 /* Pods_Penbotv1Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +125,7 @@
 				833E57EF27B17602002B2710 /* Penbotv1UITests */,
 				833E57CD27B17600002B2710 /* Products */,
 				8309084227D595F500F5872A /* Frameworks */,
+				ED6991CDA7AD1B18F1037AAD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +174,20 @@
 			path = Penbotv1UITests;
 			sourceTree = "<group>";
 		};
+		ED6991CDA7AD1B18F1037AAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C495FA5AB060976EF852A98 /* Pods-Penbotv1.debug.xcconfig */,
+				477A0A3ACA557459AA987584 /* Pods-Penbotv1.release.xcconfig */,
+				85AFF69086B997575EBD3B8C /* Pods-Penbotv1-Penbotv1UITests.debug.xcconfig */,
+				4745E629C5929E6A63375056 /* Pods-Penbotv1-Penbotv1UITests.release.xcconfig */,
+				345BE147FE2B9696E5CC035D /* Pods-Penbotv1Tests.debug.xcconfig */,
+				3D9B120DCDFC8A7C73A5E5B5 /* Pods-Penbotv1Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 833E57F627B17602002B2710 /* Build configuration list for PBXNativeTarget "Penbotv1" */;
 			buildPhases = (
+				83210EE9EA2173F174CB26B2 /* [CP] Check Pods Manifest.lock */,
 				833E57C827B17600002B2710 /* Sources */,
 				833E57C927B17600002B2710 /* Frameworks */,
 				833E57CA27B17600002B2710 /* Resources */,
+				10160D9009563EE820ACD565 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 833E57F927B17602002B2710 /* Build configuration list for PBXNativeTarget "Penbotv1Tests" */;
 			buildPhases = (
+				A55993DB4574B074CA68706F /* [CP] Check Pods Manifest.lock */,
 				833E57DE27B17602002B2710 /* Sources */,
 				833E57DF27B17602002B2710 /* Frameworks */,
 				833E57E027B17602002B2710 /* Resources */,
@@ -197,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 833E57FC27B17602002B2710 /* Build configuration list for PBXNativeTarget "Penbotv1UITests" */;
 			buildPhases = (
+				55DDFA74580DEC74AE2EE83A /* [CP] Check Pods Manifest.lock */,
 				833E57E827B17602002B2710 /* Sources */,
 				833E57E927B17602002B2710 /* Frameworks */,
 				833E57EA27B17602002B2710 /* Resources */,
+				511758BB61E6C2F2813B7135 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,6 +318,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10160D9009563EE820ACD565 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Penbotv1/Pods-Penbotv1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Penbotv1/Pods-Penbotv1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Penbotv1/Pods-Penbotv1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		511758BB61E6C2F2813B7135 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Penbotv1-Penbotv1UITests/Pods-Penbotv1-Penbotv1UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Penbotv1-Penbotv1UITests/Pods-Penbotv1-Penbotv1UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Penbotv1-Penbotv1UITests/Pods-Penbotv1-Penbotv1UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55DDFA74580DEC74AE2EE83A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Penbotv1-Penbotv1UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83210EE9EA2173F174CB26B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Penbotv1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55993DB4574B074CA68706F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Penbotv1Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		833E57C827B17600002B2710 /* Sources */ = {
@@ -466,6 +607,7 @@
 		};
 		833E57F727B17602002B2710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C495FA5AB060976EF852A98 /* Pods-Penbotv1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -497,6 +639,7 @@
 		};
 		833E57F827B17602002B2710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477A0A3ACA557459AA987584 /* Pods-Penbotv1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -528,6 +671,7 @@
 		};
 		833E57FA27B17602002B2710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 345BE147FE2B9696E5CC035D /* Pods-Penbotv1Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +692,7 @@
 		};
 		833E57FB27B17602002B2710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9B120DCDFC8A7C73A5E5B5 /* Pods-Penbotv1Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,6 +713,7 @@
 		};
 		833E57FD27B17602002B2710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85AFF69086B997575EBD3B8C /* Pods-Penbotv1-Penbotv1UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +732,7 @@
 		};
 		833E57FE27B17602002B2710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4745E629C5929E6A63375056 /* Pods-Penbotv1-Penbotv1UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
