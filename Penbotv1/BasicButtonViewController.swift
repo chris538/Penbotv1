@@ -9,18 +9,17 @@ import UIKit
 
 class BasicButtonViewController: UIViewController {
 
-    
-    @IBOutlet weak var currentCommandTextField: UITextField!
+    @IBOutlet weak var codeTestLabel: UILabel!
     @IBAction func squareCommandButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is drawing a square..."
+        codeTestLabel.text = "Penbot is drawing a square..."
         print("Test square in console")
     }
     @IBAction func triangleCommandButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is drawing a triangle..."
+        codeTestLabel.text = "Penbot is drawing a triangle..."
         print("Test triangle in console")
     }
     @IBAction func circleCommandButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is drawing a circle..."
+        codeTestLabel.text = "Penbot is drawing a circle..."
         print("Test circle in console")
     }
     

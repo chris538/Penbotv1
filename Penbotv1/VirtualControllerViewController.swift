@@ -11,27 +11,27 @@ import GameController
 class VirtualControllerViewController: UIViewController {
     
     
-    @IBOutlet weak var currentCommandTextField: UITextField!
+    @IBOutlet weak var codeTestLabel: UILabel!
     @IBAction func fowardButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is moving forward..."
+        codeTestLabel.text = "Penbot is moving forward..."
     }
     @IBAction func reverseButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is moving backward..."
+        codeTestLabel.text = "Penbot is moving backward..."
     }
     @IBAction func leftButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is moving left..."
+        codeTestLabel.text = "Penbot is moving left..."
     }
     @IBAction func rightButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is moving right..."
+        codeTestLabel.text = "Penbot is moving right..."
     }
     @IBAction func triangleButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is drawing a triangle..."
+        codeTestLabel.text = "Penbot is drawing a triangle..."
     }
     @IBAction func circleButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is drawing a circle..."
+        codeTestLabel.text = "Penbot is drawing a circle..."
     }
     @IBAction func squareButton(_ sender: Any) {
-        currentCommandTextField.text = "Penbot is drawing a square..."
+        codeTestLabel.text = "Penbot is drawing a square..."
     }
     
     

@@ -5,6 +5,31 @@
 //  Created by Chris Le on 2/7/22.
 //
 
+import CoreBluetooth
+import UIKit
+
+class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDelegate
+{
+    private var centralManager: CBCentralManager!
+    private var peripheral: CBPeripheral!
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        print("View loaded")
+        // Do any additional setup after loading the view.
+        centralManager = CBCentralManager(delegate: self, queue: nil)
+    }
+}
+
+
+
+
+
+
+
+
+
 
 //Commented out entire block to test the rest of the code for printing to terminal
 /*import UIKit
