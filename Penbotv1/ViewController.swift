@@ -20,6 +20,50 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
         // Do any additional setup after loading the view.
         centralManager = CBCentralManager(delegate: self, queue: nil)
     }
+    
+    //Start scanning if the iphone bluetooth is on
+    func centralManagerDidUpdateState(_ central: CBCentralManager)
+    {
+        print("What is the central state status")
+        if central.state != .poweredOn
+        {
+            print("Central is not on")
+        }
+        
+        //Connect to the Bluetooth module
+        else
+        {
+            print("Central scanning for", BluetoothModule.BTModuleUUID);
+            centralManager.scanForPeripherals(withServices: [BluetoothModule.BTModuleUUID],
+                                              options: [CBCentralManagerScanOptionAllowDuplicatesKey : true])
+        }
+    }
+    
+    //Function that handles the result of the bluetooth scan
+    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber)
+    {
+        //Stop scanning when the device is found
+        self.centralManager.stopScan()
+        
+        //Copy the peripheral instance
+        self.peripheral = peripheral
+        self.peripheral.delegate = self
+        
+        //Connect to device
+        self.centralManager.connect(self.peripheral, options: nil)
+    }
+    
+    //Function that ensures the connection is successful
+    func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral)
+    {
+        if peripheral == self.peripheral
+        {
+            print("Connected to the AT-09 Bluetooth module")
+            peripheral.discoverServices([BluetoothModule.BTModuleUUID])
+        }
+    }
+    
+    //Handles discovery event
 }
 
 
