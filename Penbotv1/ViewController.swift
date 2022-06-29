@@ -64,6 +64,34 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     }
     
     //Handles discovery event
+    func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?)
+    {
+        if let services = peripheral.services
+        {
+            for service in services {
+                if service.uuid == BluetoothModule.BTModuleUUID
+                {
+                    print("BT Module found")
+                    
+                    //Discovery of characteristics of the Penbot
+                    /*peripheral.discoverCharacteristics(BluetoothModule.
+                                                       BluetoothModule., for: <#T##CBService#>)*/
+                }
+            }
+        }
+    }
+    
+    //Handles the discovery of the characteristics in the BluetoothModule file
+    /*func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?)
+    {
+        if let characteristics = service.characteristics
+        {
+            for characteristic in characteristics
+            {
+                if characteristic.uuid == BluetoothModule.
+            }
+        }
+    }*/
 }
 
 

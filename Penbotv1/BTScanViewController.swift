@@ -5,7 +5,7 @@
 //  Created by Chris Le on 3/16/22.
 //
 
-import UIKit
+/*import UIKit
 import CoreBluetooth
 
 class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDelegate {
@@ -48,3 +48,4 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         centralManager = CBCentralManager(delegate: self, queue: nil)
     }
 }
+*/
